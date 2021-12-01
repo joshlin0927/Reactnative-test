@@ -78,7 +78,4 @@ Android 注意事項：
    3. 未保障使用者權益--在使用者不知情的狀況下收取費用、使用或是收集資料
    4. Google Play App Signing 是儲存 APP 簽名密鑰的方式，選擇加入或退出都可以
    5. 可以選擇要供應的國家/地區，要看相關地區的條例
-   6. 提示“此應用與您的設備不兼容”怎麼辦？ 
-      解決方法：Player Setting-Other Setting-Configuration-Install Location 
-      修改為Automatic
-   7. 類別和年齡分級--依據內容照實填寫
+   6. 類別和年齡分級--依據內容照實填寫

@@ -38,6 +38,9 @@ export default function DataScreen() {
       .then(r => r.json())
       .then(obj => {
         setData(obj)
+        setTimeout(() => {
+          setIsLoading(false)
+        }, 1000)
       })
       .catch(error => {
         console.error(error)
@@ -54,13 +57,17 @@ export default function DataScreen() {
 
   return (
     <>
-      <View style={styles.center}>
-        <View style={styles.cate}>
-          <Text>City Name</Text>
-          <Text>Full Name</Text>
+      {isLoading ? (
+        <ActivityIndicator style={styles.center} />
+      ) : (
+        <View style={styles.center}>
+          <View style={styles.cate}>
+            <Text>City Name</Text>
+            <Text>Full Name</Text>
+          </View>
+          <FlatList data={data} renderItem={renderItem} />
         </View>
-        <FlatList data={data} renderItem={renderItem} />
-      </View>
+      )}
     </>
   )
 }
